@@ -9,31 +9,25 @@
 </head>
 <body class="home index">
     <div class="wrap">
-        <nav class="nav nav-custom">
-            <h1>LOGIN</h1>
-            <form action="" class="form-signin">
-                <input type="text" placeholder="Username/Email" name="user_uid">
-                <input type="password" placeholder="Password" name="user_pwd">
-                <button type="submit">Login</button>
-            </form>
-            <a href="signup.php" class="btn btn-red signup">Register</a>
-        </nav>
+        <?php
+            include_once 'includes/navbar.php';
+        ?>
         <section>
             <h3>Sign Up</h3>
             <div class="content">
-                <form action="">
+                <form action="inc/signup.inc.php" method="POST">
                     <input type="text" placeholder="Frist Name..." name="user_first">
                     <input type="text" placeholder="Last name..." name="user_last">
                     <input type="email" placeholder="Email..." name="user_email">
                     <input type="text" placeholder="Username" name="user_uid">
                     <input type="password" placeholder="Password" name="user_pwd">
-                    <button type="submit" class="btn btn-submit">Register</button>
+                    <button type="submit" name="submit" class="btn btn-submit">Register</button>
                 </form>
             </div>
         </section>
-        <footer>
-            <p>Design by <a href="#">Trần Toản</a></p>
-        </footer>
+        <?php
+            include_once 'includes/footer.php';
+        ?>
     </div>
 </body>
 </html>
