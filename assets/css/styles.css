@@ -107,3 +107,87 @@ footer {
     background: #ff6472;
     color: #fff;
 }
+
+.wrap-img {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-user {
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #c5c5c5;
+    float: left;
+}
+
+.name-user {
+    display: block;
+    font-family: Arial;
+    float: left;
+    padding-left: 10px;
+}
+
+.email-user {
+    position: absolute;
+    bottom: 25px;
+    left: 70px;
+    font-family: Arial;
+    font-size: 12px;
+    color: #999;
+}
+
+.content-allimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.content-selfimg {
+    padding: 10px;
+    text-align: center;
+}
+
+.wrap-selfimg {
+    position: relative;
+    background: #fff;
+    margin-top: -10px!important;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.selfuser {
+    float: none;
+    width: 100px;
+}
+
+.form-upload-profile {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btn-upload {
+    background: lightcoral;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-upload-profile input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+

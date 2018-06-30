@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include_once 'inc/db.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,11 +18,60 @@
         ?>
         <section>
             <h3>Home</h3>
-            <?php
-                if (isset($_SESSION['u_id'])) {
-                    echo "<p>You are logged in!";
-                }
-            ?>
+            
+            <div class="wrap-img">
+                <div class="content-allimg">
+                    <div class="card card-user">
+                        <img src="uploads/profiledefault.jpg" alt="" class="img-user">
+                        <span class="name-user">Sky Albert</span>
+                        <span class="email-user">trantoan.fox.97@gmail.com</span>
+                    </div>
+                    <div class="card card-user">
+                        <img src="uploads/profiledefault.jpg" alt="" class="img-user">
+                        <span class="name-user">Sky Albert</span>
+                        <span class="email-user">trantoan.fox.97@gmail.com</span>
+                    </div>
+                    <div class="card card-user">
+                        <img src="uploads/profiledefault.jpg" alt="" class="img-user">
+                        <span class="name-user">Sky Albert</span>
+                        <span class="email-user">trantoan.fox.97@gmail.com</span>
+                    </div>
+                    <div class="card card-user">
+                        <img src="uploads/profiledefault.jpg" alt="" class="img-user">
+                        <span class="name-user">Sky Albert</span>
+                        <span class="email-user">trantoan.fox.97@gmail.com</span>
+                    </div>
+                    <div class="card card-user">
+                        <img src="uploads/profiledefault.jpg" alt="" class="img-user">
+                        <span class="name-user">Sky Albert</span>
+                        <span class="email-user">trantoan.fox.97@gmail.com</span>
+                    </div>
+                    <div class="card card-user">
+                        <img src="uploads/profiledefault.jpg" alt="" class="img-user">
+                        <span class="name-user">Sky Albert</span>
+                        <span class="email-user">trantoan.fox.97@gmail.com</span>
+                    </div>
+                </div>
+                <div class="content-selfimg">
+                    <div class="wrap-selfimg">
+                    <?php
+
+                        if (isset($_SESSION['u_id'])) {
+                            echo '<img src="uploads/profiledefault.jpg" alt="" class="img-user selfuser">
+                            <p class="name-selfuser selfname">Sky Albert</p>
+                            <form class="form-upload-profile" action="" method="POST" enctype="multipart/form-data">
+                                <button class="btn btn-upload">Change your profile</button>
+                                <input type="file" name="uploadFileAvatar">
+                            </form>';
+                            
+                        } else {
+                            echo "<p>You are not logged in!</p>";
+                        }
+                    ?>
+                        
+                    </div>
+                </div>
+            </div>
         </section>
         <?php
             include_once 'includes/footer.php';
