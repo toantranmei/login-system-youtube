@@ -74,6 +74,10 @@
                                 <input type="file" name="uploadFileAvatar">
                                 <button style="width: 100%; z-index: 9999; " class="btn btn-upload" name="submit" type="submit">Upload</button>
                             </form>';
+                            echo '<form action="inc/removeimage.inc.php" method="post">
+                            <button type="submit" name="submit" class="btn">Remove Avatar</button>
+                            </form>
+                            '; 
                             
                         } else {
                             echo "<p>You are not logged in!</p>";
