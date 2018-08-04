@@ -190,4 +190,19 @@ footer {
     cursor: pointer;
 }
 
+.post-wrap {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+.search-box form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.search-box form .input-search {
+    width: 88%;
+    border: 1px solid #333;
+}
+
 
